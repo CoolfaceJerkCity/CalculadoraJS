@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculadoraHtml y JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="Calculator.js"></script>
+    <script src="Display.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <main class="cont-general min-flex">
+        <div class="sub-general container">
+
+            <!-- HEADER -->
+            <div class="row bg-dark min-flex text-white">
+                <div class="header text-center">
+                    <h1>Calculadora HTML y JS</h1>   
+                </div>
+            </div>
+
+            <!-- CALCULADORA -->
+            <div class="row bg-secondary min-flex">
+                <div class="calculadora container col-8 bg-success border p-2 m-3">
+                    <div class="row cont-display min-flex">
+                            <div class="display text-white bg-dark w-75 my-3">
+                                <div id="valor-anterior"></div>
+                                <div id="valor-actual"></div>
+                            </div>
+                    </div>
+                        
+                    <!-- BOTONES -->
+                    <div class="row min-flex">
+                            <button class="btn btn-secondary col-2" onclick="display.deleteAll()">C</button>
+                            <button class="btn btn-secondary col-2" onclick="display.deleteValue()">&larr;</button>
+                            <button class="btn btn-dark col-2 operador" value="potenciar">^</button>
+                            <button class="btn btn-dark col-2 operador" value="raiz">√x</button>
+                    </div>
+                    <div class="row min-flex">
+                            <button class="btn btn-light col-2 numero">7</button>
+                            <button class="btn btn-light col-2 numero">8</button>
+                            <button class="btn btn-light col-2 numero">9</button>
+                            <button class="btn btn-dark col-2 operador" value="dividir">%</button>
+                    </div>
+                    <div class="row min-flex">
+                            <button class="btn btn-light col-2 numero">6</button>
+                            <button class="btn btn-light col-2 numero">5</button>
+                            <button class="btn btn-light col-2 numero">4</button>
+                            <button class="btn btn-dark col-2 operador" value="multiplicar">x</button>
+                    </div>
+                    <div class="row min-flex">
+                            <button class="btn btn-light col-2 numero">3</button>
+                            <button class="btn btn-light col-2 numero">2</button>
+                            <button class="btn btn-light col-2 numero">1</button>
+                            <button class="btn btn-dark col-2 operador" value="restar">-</button>
+                    </div>
+                    <div class="row min-flex">
+                            <button class="btn btn-light col-2 numero">0</button>
+                            <button class="btn btn-light col-2 numero">.</button>
+                            <button class="btn btn-light col-2 operador" value="igual">=</button>
+                            <button class="btn btn-dark col-2 operador" value="sumar">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-dark min-flex text-white">
+                <div class="footer text-center">
+                    <h1>&copy; TheCoolface</h1>   
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
