@@ -1,2 +1,2 @@
 # CalculadoraHTML-JS
-Calculadora semi-funcional con operaciones básicas y avanzadas em JS
+Calculadora semi-funcional con operaciones básicas y avanzadas en JS
